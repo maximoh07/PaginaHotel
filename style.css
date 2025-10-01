@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.restaurante-fondo {
+  background-image: url("/images/restaurante/restaurant-interior.jpg");
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+}
+.restaurante-presentacion {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.restaurante-presentacion p {
+  padding: 0;
+}
+.restaurante-info {
+  padding: 50px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.restaurante-info h1 {
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.restaurante-info h2 {
+  font-size: 15px;
+}
+.restaurante-info .horario {
+  display: flex;
+}
+
+.restaurante-info .horario img {
+  width: 15px;
+}
+.restaurante-info .horario p {
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+.restaurante-info .subtitulo {
+  padding: 50px 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+.restaurante-info .descripcion {
+  line-height: 18px;
+}
+.presentacion_foto {
+  background-image: url("/images/restaurante/ceviche.jpg");
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+  filter: grayscale(10%);
+}
+.fotos-container img {
+  width: 100%;
+}
