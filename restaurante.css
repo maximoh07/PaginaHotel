@@ -1,9 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+p {
+  margin: 0;
 }
 .restaurante-fondo {
-  background-image: url("/images/restaurante/restaurant-interior.jpg");
+  background-image: url("/images/restaurante/hero-restaurante.jpg");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
@@ -18,7 +22,6 @@
 }
 .restaurante-info {
   padding: 50px;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .restaurante-info h1 {
@@ -31,10 +34,11 @@
 }
 .restaurante-info .horario {
   display: flex;
+  align-items: center;
 }
 
 .restaurante-info .horario img {
-  width: 15px;
+  width: 25px;
 }
 .restaurante-info .horario p {
   padding-left: 10px;
@@ -45,6 +49,7 @@
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
+  line-height: 20px;
 }
 .restaurante-info .descripcion {
   line-height: 18px;
@@ -55,7 +60,30 @@
   background-repeat: none;
   background-size: cover;
   filter: grayscale(10%);
+  margin: 50px;
 }
+.restaurante-carrusel-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 50px 50px;
+}
+.carousel img {
+  height: 550px;
+  filter: grayscale(30%);
+}
+.carousel .carousel-caption h5 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+.carousel .carousel-caption p {
+  line-height: 15px;
+  color: whitesmoke;
+}
+.restaurante-carrusel-section .carrusel-texto {
+  margin: 50px;
+}
+
 .fotos-container img {
   width: 100%;
 }
