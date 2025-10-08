@@ -7,7 +7,7 @@ p {
   margin: 0;
 }
 .restaurante-fondo {
-  background-image: url("/images/restaurante/hero-restaurante.jpg");
+  background-image: url("../images/restaurante/hero-restaurante.jpg");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
