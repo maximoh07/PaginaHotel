@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/habitaciones.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="habitaciones-heroImage">
+        <h1>Habitaciones</h1>
+      </section>
+      <section class="habitaciones-filtros">
+        <ul class="habitaciones-filtros-nav">
+          <div
+            onclick="mostrarHabitaciones(); setMenuActive(this)"
+            class="nav-option active"
+          >
+            <li>Todas</li>
+          </div>
+          <div
+            onclick="filtrarCategorias('clasica'); setMenuActive(this)"
+            class="nav-option"
+          >
+            <li>Clásicas</li>
+          </div>
+          <div
+            onclick="filtrarCategorias('suites'); setMenuActive(this)"
+            class="nav-option"
+          >
+            <li>Suites</li>
+          </div>
+          <div
+            onclick="filtrarCategorias('presidencial'); setMenuActive(this)"
+            class="nav-option"
+          ></div>
+        </ul>
+      </section>
+
+      <section class="habitaciones-section">
+        <div id="habitacionContainer" class="habitacion-container">
+          <!-- <div class="habitacion-info">
+            <h2>Nombre habitacion</h2>
+            <p>Area | Cant. huespedes</p>
+            <div class="habitacion-descripcion">
+              <p>Cama</p>
+              <p>Baño</p>
+              <p>Escritorio</p>
+            </div>
+            <p class="habitacion-frase">Breve frase de la habitacion</p>
+            <span></span>
+            <div class="habitacion-botones">
+              <button>Reservar</button>
+            </div>
+          </div>
+          <div class="habitacion-imagen">
+            <img src="/images/habitaciones/luxury-room.jpg" alt="" />
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/habitaciones.js"></script>
+  </body>
+</html>
