@@ -5,7 +5,7 @@
 }
 .habitaciones-heroImage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../images/habitaciones/habitaciones-hero.jpg");
+    url("./images/habitaciones/habitaciones-hero.jpg");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
