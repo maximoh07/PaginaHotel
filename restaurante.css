@@ -6,12 +6,23 @@
 p {
   margin: 0;
 }
-.restaurante-fondo {
-  background-image: url("./images/restaurante/hero-restaurante.jpg");
+.restaurante-heroImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("./images/restaurante/hero-restaurante.jpg");
   background-position: center center;
   background-repeat: none;
   background-size: cover;
+  height: 90vh;
+  background-attachment: fixed;
+}
+.restaurante-heroImage h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
   height: 100vh;
+  color: white;
+  text-transform: uppercase;
 }
 .restaurante-presentacion {
   display: grid;
@@ -43,6 +54,7 @@ p {
 .restaurante-info .horario p {
   padding-left: 10px;
   text-transform: uppercase;
+  margin: 0;
 }
 .restaurante-info .subtitulo {
   padding: 50px 0;
@@ -86,4 +98,38 @@ p {
 
 .fotos-container img {
   width: 100%;
+}
+
+@media (max-width: 846px) {
+  .restaurante-presentacion {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurante-info {
+    padding: 20px 50px;
+  }
+  .presentacion_foto {
+    margin: 0 50px;
+    height: 300px;
+  }
+  .restaurante-info .subtitulo {
+    padding: 30px 0;
+    margin: 0;
+  }
+
+  .restaurante-carrusel-section {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 20px 50px;
+  }
+  .carousel img {
+    height: 400px;
+    filter: grayscale(30%);
+  }
+  .restaurante-carrusel-section .carrusel-texto {
+    margin: 50px 10px;
+  }
+  .carrusel-texto p {
+    margin: 0;
+  }
 }

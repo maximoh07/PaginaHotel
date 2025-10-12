@@ -9,7 +9,7 @@
   background-position: center center;
   background-repeat: none;
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
   background-attachment: fixed;
 }
 .habitaciones-heroImage h1 {
@@ -17,13 +17,14 @@
   justify-content: center;
   align-items: center;
   height: fit-content;
-  height: 80vh;
+  height: 100vh;
   color: white;
+  text-transform: uppercase;
 }
 .habitaciones-filtros {
   width: 100%;
   margin: auto;
-  padding-top: 50px;
+  padding-top: 100px;
   position: relative;
 }
 .habitaciones-filtros-nav {
@@ -37,8 +38,8 @@
   content: "";
   position: absolute;
   bottom: 0px;
-  left: 30%;
-  width: 45%;
+  left: 10%;
+  width: 90%;
   height: 2px;
   background-color: #000;
 }
@@ -66,11 +67,11 @@
 .habitacion-container {
   display: grid;
   grid-template-columns: 40% 60%;
-}
-.habitacion-info {
   border: 0.5px solid gray;
   margin-bottom: 50px;
   height: 400px;
+}
+.habitacion-info {
   padding: 40px;
 }
 .habitacion-info span {
@@ -97,7 +98,7 @@
 
 .habitacion-imagen {
   img {
-    width: 90%;
+    width: 100%;
     height: 400px;
   }
 }
@@ -114,4 +115,35 @@
   background-color: black;
   color: white;
   transition: ease 0.5s;
+}
+
+@media (max-width: 846px) {
+  .habitaciones-filtros-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+    padding: 0;
+  }
+  .habitaciones-filtros-nav::after {
+    display: none;
+  }
+  .nav-option {
+    width: fit-content;
+    padding: 0 5px;
+  }
+
+  /* Seccion habitaciones */
+  .habitaciones-section {
+    margin: 0 20px 30px;
+  }
+  .habitacion-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+  .habitacion-info {
+    padding: 20px 30px;
+  }
 }

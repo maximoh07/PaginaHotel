@@ -92,7 +92,7 @@ const infoHabitaciones = [
   },
 ];
 
-const habitacionInfoJS = document.getElementById("habitacionContainer");
+const habitacionInfoJS = document.getElementById("habitacionesSection");
 
 /* Agregar y quitar clase al navbar */
 
@@ -114,25 +114,27 @@ function filtrarCategorias(tipoHabitacionSeleccionada) {
   infoHabitacionesFiltradas.forEach((habitacion) => {
     habitacionInfoJS.innerHTML += `
   
-  <div class="habitacion-info">
-    <h2>${habitacion.nombreHabitacion}</h2>
-    <p>Area: ${habitacion.area} m2 | Cant. huespedes: ${habitacion.huespedes}</p>
-        <div class="habitacion-descripcion">
-              <p>${habitacion.tipoCama}</p>
-              <p>${habitacion.banio}</p>
-              <p>${habitacion.extra}</p>
-        </div>
-        <p class="habitacion-frase">${habitacion.frase}</p>
-        <span></span>
-        <div class="habitacion-botones">
-              <button onclick="enviarInfoHabitacion('Hola quisiera reservar la habitación ${habitacion.nombreHabitacion}')">
-        Reservar esta habitación
-      </button>
-        </div>
+  <div id="habitacionContainer" class="habitacion-container">
+      <div class="habitacion-info">
+        <h2>${habitacion.nombreHabitacion}</h2>
+        <p>Area: ${habitacion.area} m2 | Cant. huespedes: ${habitacion.huespedes}</p>
+            <div class="habitacion-descripcion">
+                  <p>${habitacion.tipoCama}</p>
+                  <p>${habitacion.banio}</p>
+                  <p>${habitacion.extra}</p>
             </div>
+            <p class="habitacion-frase">${habitacion.frase}</p>
+          <span></span>
+            <div class="habitacion-botones">
+                  <button onclick="enviarInfoHabitacion('Hola quisiera reservar la habitación ${habitacion.nombreHabitacion}')">
+            Reservar esta habitación
+          </button>
+            </div>
+                </div>
 
-    <div class="habitacion-imagen">
-            <img src="${habitacion.imagenHabitacion}" alt="" />
+        <div class="habitacion-imagen">
+                <img src="${habitacion.imagenHabitacion}" alt="" />
+        </div>
     </div>
 `;
   });
@@ -142,26 +144,27 @@ function mostrarHabitaciones() {
   habitacionInfoJS.innerHTML = "";
   infoHabitaciones.forEach((habitacion) => {
     habitacionInfoJS.innerHTML += `
-  
-  <div class="habitacion-info">
-    <h2>${habitacion.nombreHabitacion}</h2>
-    <p>Area: ${habitacion.area} m2 | Cant. huespedes: ${habitacion.huespedes}</p>
-        <div class="habitacion-descripcion">
-              <p>${habitacion.tipoCama}</p>
-              <p>${habitacion.banio}</p>
-              <p>${habitacion.extra}</p>
-        </div>
-        <p class="habitacion-frase">${habitacion.frase}</p>
-       <span></span>
-        <div class="habitacion-botones">
-              <button onclick="enviarInfoHabitacion('Hola quisiera reservar la habitación ${habitacion.nombreHabitacion}')">
-        Reservar esta habitación
-      </button>
-        </div>
+  <div id="habitacionContainer" class="habitacion-container">
+      <div class="habitacion-info">
+        <h2>${habitacion.nombreHabitacion}</h2>
+        <p>Area: ${habitacion.area} m2 | Cant. huespedes: ${habitacion.huespedes}</p>
+            <div class="habitacion-descripcion">
+                  <p>${habitacion.tipoCama}</p>
+                  <p>${habitacion.banio}</p>
+                  <p>${habitacion.extra}</p>
             </div>
+            <p class="habitacion-frase">${habitacion.frase}</p>
+          <span></span>
+            <div class="habitacion-botones">
+                  <button onclick="enviarInfoHabitacion('Hola quisiera reservar la habitación ${habitacion.nombreHabitacion}')">
+            Reservar esta habitación
+          </button>
+            </div>
+                </div>
 
-    <div class="habitacion-imagen">
-            <img src="${habitacion.imagenHabitacion}" alt="" />
+        <div class="habitacion-imagen">
+                <img src="${habitacion.imagenHabitacion}" alt="" />
+        </div>
     </div>
 `;
   });

@@ -9,6 +9,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../restaurante.css" />
     <script src="../navbar.js"></script>
     <title>Restaurante</title>
@@ -16,8 +17,11 @@
   <body>
     <div id="navbar"></div>
     <main>
-      <section class="restaurante-fondo"></section>
-      <section class="restaurante-presentacion">
+      <!-- <section class="restaurante-fondo"></section> -->
+      <section class="restaurante-heroImage">
+        <h1>Restaurante</h1>
+      </section>
+      <section data-aos="fade-up" class="restaurante-presentacion">
         <div class="restaurante-info">
           <h2>Gastronomía</h2>
           <h1>Restaurante</h1>
@@ -38,7 +42,7 @@
         </div>
         <div class="presentacion_foto"></div>
       </section>
-      <section class="restaurante-carrusel-section">
+      <section data-aos="fade-up" class="restaurante-carrusel-section">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -134,15 +138,21 @@
       </section>
       <section class="fotos-container">
         <img
+          data-aos="fade-up"
           src="../images/restaurante/chicken-dish-restaurant-table.jpg"
           alt="chicken-dish"
         />
         <img
+          data-aos="fade-up"
           src="../images/restaurante/rolls-topped-with-melted-cheese.jpg"
           alt="rolls"
         />
 
-        <img src="../images/restaurante/rice.jpg" alt="rice" />
+        <img
+          data-aos="fade-up"
+          src="../images/restaurante/rice.jpg"
+          alt="rice"
+        />
       </section>
     </main>
     <script
@@ -150,5 +160,10 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
